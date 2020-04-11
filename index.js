@@ -1,13 +1,5 @@
 const recipes = [
   {
-    recipeTitle: 'Chocolate Lava Cake for Two',
-    recipeDesc: 'For a *special* night in.',
-    recipeUrl:
-      'https://cooking.nytimes.com/recipes/1019957-chocolate-lava-cake-for-two',
-    imageUrl:
-      'https://static01.nyt.com/images/2019/02/11/dining/11molten-lava-cake/ya-molten-lava-cake-articleLarge.jpg',
-  },
-  {
     recipeTitle: 'Oven-Roasted Chicken Shawarma',
     recipeDesc:
       'Super easy dinner — best accompanied with Trader Joe’s frozen falafel and a healthy glass of wine.',
@@ -24,14 +16,6 @@ const recipes = [
       'https://cooking.nytimes.com/recipes/1019057-salmon-en-papillote-salmon-in-parchment',
     imageUrl:
       'https://static01.nyt.com/images/2015/12/29/dining/29salmon-19/29salmon-19-articleLarge.jpg',
-  },
-  {
-    recipeTitle: 'Deep Dish Honey Apple Galette',
-    recipeDesc: 'A big time commitment but boy is she worth it.',
-    recipeUrl:
-      'https://cooking.nytimes.com/recipes/1020607-deep-dish-honey-apple-galette',
-    imageUrl:
-      'https://static01.nyt.com/images/2019/11/13/dining/11Romanrex6/merlin_161933682_c2bd8537-de78-4ada-bea6-920a330971a5-articleLarge.jpg',
   },
   {
     recipeTitle: 'One-Pot Turmeric Coconut Rice With Greens',
@@ -75,14 +59,7 @@ const recipes = [
     imageUrl:
       'https://static01.nyt.com/images/2019/02/20/dining/20Romanrex/merlin_147497019_27213a02-49d8-48e8-94c8-e5ecb5894970-articleLarge.jpg',
   },
-  {
-    recipeTitle: 'Salted Chocolate Chunk Shortbread Cookies',
-    recipeDesc: 'Because obviously.',
-    recipeUrl:
-      'https://cooking.nytimes.com/recipes/1019152-salted-chocolate-chunk-shortbread-cookies',
-    imageUrl:
-      'https://static01.nyt.com/images/2018/12/12/dining/16COOKING-SHORTBREADCOOKIES3/16COOKING-SHORTBREADCOOKIES3-articleLarge.jpg',
-  },
+
   {
     recipeTitle: 'Spiced Chickpea Stew With Coconut and Turmeric',
     recipeDesc: 'You know her, you love her.',
@@ -130,6 +107,30 @@ const recipes = [
       'https://www.blueapron.com/recipes/fresh-fettuccine-pasta-with-chioggia-beet-poppy-seeds-goat-cheese',
     imageUrl:
       'https://media.blueapron.com/recipes/2078/square_newsletter_images/1483999058-4-5819/116-2PV1-fresh-fettuccine-pasta-14120_cropped_square_hi_res.jpg?quality=80&width=600',
+  },
+  {
+    recipeTitle: 'Chocolate Lava Cake for Two',
+    recipeDesc: 'For a *special* night in.',
+    recipeUrl:
+      'https://cooking.nytimes.com/recipes/1019957-chocolate-lava-cake-for-two',
+    imageUrl:
+      'https://static01.nyt.com/images/2019/02/11/dining/11molten-lava-cake/ya-molten-lava-cake-articleLarge.jpg',
+  },
+  {
+    recipeTitle: 'Salted Chocolate Chunk Shortbread Cookies',
+    recipeDesc: 'Because obviously.',
+    recipeUrl:
+      'https://cooking.nytimes.com/recipes/1019152-salted-chocolate-chunk-shortbread-cookies',
+    imageUrl:
+      'https://static01.nyt.com/images/2018/12/12/dining/16COOKING-SHORTBREADCOOKIES3/16COOKING-SHORTBREADCOOKIES3-articleLarge.jpg',
+  },
+  {
+    recipeTitle: 'Deep Dish Honey Apple Galette',
+    recipeDesc: 'A big time commitment but boy is she worth it.',
+    recipeUrl:
+      'https://cooking.nytimes.com/recipes/1020607-deep-dish-honey-apple-galette',
+    imageUrl:
+      'https://static01.nyt.com/images/2019/11/13/dining/11Romanrex6/merlin_161933682_c2bd8537-de78-4ada-bea6-920a330971a5-articleLarge.jpg',
   },
   {
     recipeTitle: 'Cinnamon Apple Layer Cake',
