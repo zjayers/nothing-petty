@@ -37,6 +37,7 @@ header {
 }
 
 nav {
+  background: red;
   padding: 20px;
   padding-left: 40px;
 }
@@ -49,7 +50,6 @@ nav {
   padding: 1px;
   font-size: 0.9rem;
   font-weight: bold;
-  background: red;
 }
 
 .active__nav {
@@ -66,7 +66,6 @@ nav {
   margin-left: auto;
   margin-right: 60px;
   font-size: 2rem;
-  background: red;
   font-weight: normal;
 }
 
