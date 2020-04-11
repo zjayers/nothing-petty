@@ -7,16 +7,21 @@
       href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,700|Nanum+Gothic:400,700,800|Open+Sans:400,600,700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>Nothing Petty</title>
   </head>
   <body>
     <header>
       <div class="nav">
         <nav>
           <a href="" class="nav__book-title active__nav">Nothing Petty</a>
-          <a href="#recipes" class="nav__recipes">Recipes</a>
-          <a href="" class="nav__contact">Contact</a>
+          <a href="#recipe-header" class="nav__recipes">Recipes</a>
+          <a href="#bday" class="nav__contact">HBD!</a>
         </nav>
         <h2 class="nav__main-header">Nothing Petty</h2>
       </div>
@@ -24,22 +29,22 @@
     <main>
       <section class="grid__container">
         <div class="container__img">
-          <img
-            src="https://images.squarespace-cdn.com/content/v1/541b1515e4b0a990b33a796e/1559938601651-09DXK39DP5MBLSQAA8LT/ke17ZwdGBToddI8pDm48kFyuxwbi7JBm3YS7pWzNGYZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmi7D7yXkH8nfwsxTs5kW9hxoXTyuIkdpIVrbHYhlB0S7YGgUjhl20RnPnLbrDT0Ce/NF%2Bfor%2Bsite%2B2.jpg?format=500w"
-            alt=""
-          />
+          <img src="./img/Book-Cover.jpg" alt="" />
         </div>
         <div class="desc__container">
           <h1 class="about-the-book">about the book</h1>
           <p class="para--bold">
             <em>Nothing Petty</em> was made with Danielle Suzann Petty Sorenson
-            in mind. All recipes are well accompanied with CATS the musical (not
-            to be confused with the movie because we all know that shit doesn’t
-            go well with anything), any of Steve’s inventive cocktails (or tbh a
-            glass of white wine), and ready to be photographed with just the
-            right amount of flash photography (a la Bon Appetit).
+            in mind. All recipes are well accompanied with CATS the musical
+            <em
+              >(not to be confused with the movie because we all know that shit
+              doesn’t go well with anything)</em
+            >, any of Steve’s inventive cocktails
+            <em>(or tbh a glass of white wine)</em>, and ready to be
+            photographed with just the right amount of flash photography
+            <em>(a la Bon Appétit)</em>.
           </p>
-          <div class="image__container">
+          <!-- <div class="image__container">
             <img id="img-1" src="https://picsum.photos/200" alt="" />
             <img id="img-2" src="https://picsum.photos/200" alt="" />
             <img id="img-3" src="https://picsum.photos/200" alt="" />
@@ -49,260 +54,33 @@
             <img id="img-7" src="https://picsum.photos/200" alt="" />
             <img id="img-8" src="https://picsum.photos/200" alt="" />
             <img id="img-9" src="https://picsum.photos/200" alt="" />
-          </div>
+          </div> -->
         </div>
-        <div class="separator"></div>
-        <div id="recipes" class="recipe__container">
-          <div class="recipe__card">
-            <a
-              target="_blank"
-              href="https://cooking.nytimes.com/recipes/1019957-chocolate-lava-cake-for-two"
-              class="recipe__link--img"
-              ><img
-                class="recipe__img"
-                src="https://static01.nyt.com/images/2019/02/11/dining/11molten-lava-cake/ya-molten-lava-cake-articleLarge.jpg"
-                alt=""
-            /></a>
-            <a
-              target="_blank"
-              href="https://cooking.nytimes.com/recipes/1019957-chocolate-lava-cake-for-two"
-              class="recipe__link"
-              ><h3 class="recipe__title">Chocolate Lava Cake for Two</h3></a
-            >
-            <p class="recipe__desc">For a *special* night in.</p>
-          </div>
-
-          <div class="recipe__card">
-            <a
-              target="_blank"
-              href="https://cooking.nytimes.com/recipes/1017161-oven-roasted-chicken-shawarma"
-              class="recipe__link--img"
-              ><img
-                class="recipe__img"
-                src="https://static01.nyt.com/images/2016/06/06/dining/06COOKING-ROASTCHICKSHAWARM2/06COOKING-ROASTCHICKSHAWARM2-articleLarge.jpg"
-                alt=""
-            /></a>
-            <a
-              target="_blank"
-              href="https://cooking.nytimes.com/recipes/1017161-oven-roasted-chicken-shawarma"
-              class="recipe__link"
-              ><h3 class="recipe__title">Oven-Roasted Chicken Shawarma</h3></a
-            >
-            <p class="recipe__desc">
-              Super easy dinner — best accompanied with Trader Joe’s frozen
-              falafel and a healthy glass of wine.
+        <!-- <div id="top-separator" class="separator"></div> -->
+        <h1 id="recipe-header" class="section__header">Recipes</h1>
+        <!-- <div class="separator"></div> -->
+        <div id="recipes" class="recipe__container"></div>
+        <div id="content">
+          <div class="wrapper">
+            <h1 id="bday" class="section__header">HAPPY BIRTHDAY DANIELLE!</h1>
+            <p id="bday-message" class="para--bold">
+              Welcome to the official beginning of the 25+ age bracket.<br />Hope
+              you have the best birthday in Florida and can’t wait to see you once
+              this global crisis is over!
             </p>
-          </div>
-
-          <div class="recipe__card">
-            <a
-              target="_blank"
-              href="----REPLACE_ME----"
-              class="recipe__link--img"
-              ><img class="recipe__img" src="----REPLACE_ME----" alt=""
-            /></a>
-            <a target="_blank" href="----REPLACE_ME----" class="recipe__link"
-              ><h3 class="recipe__title">----REPLACE_ME----</h3></a
-            >
-            <p class="recipe__desc">----REPLACE_ME----</p>
-          </div>
-
-          <div class="recipe__card">
-            <a
-              target="_blank"
-              href="----REPLACE_ME----"
-              class="recipe__link--img"
-              ><img class="recipe__img" src="----REPLACE_ME----" alt=""
-            /></a>
-            <a target="_blank" href="----REPLACE_ME----" class="recipe__link"
-              ><h3 class="recipe__title">----REPLACE_ME----</h3></a
-            >
-            <p class="recipe__desc">----REPLACE_ME----</p>
-          </div>
-
-          <div class="recipe__card">
-            <a
-              target="_blank"
-              href="----REPLACE_ME----"
-              class="recipe__link--img"
-              ><img class="recipe__img" src="----REPLACE_ME----" alt=""
-            /></a>
-            <a target="_blank" href="----REPLACE_ME----" class="recipe__link"
-              ><h3 class="recipe__title">----REPLACE_ME----</h3></a
-            >
-            <p class="recipe__desc">----REPLACE_ME----</p>
-          </div>
-
-          <div class="recipe__card">
-            <a
-              target="_blank"
-              href="----REPLACE_ME----"
-              class="recipe__link--img"
-              ><img class="recipe__img" src="----REPLACE_ME----" alt=""
-            /></a>
-            <a target="_blank" href="----REPLACE_ME----" class="recipe__link"
-              ><h3 class="recipe__title">----REPLACE_ME----</h3></a
-            >
-            <p class="recipe__desc">----REPLACE_ME----</p>
-          </div>
-
-          <div class="recipe__card">
-            <a
-              target="_blank"
-              href="----REPLACE_ME----"
-              class="recipe__link--img"
-              ><img class="recipe__img" src="----REPLACE_ME----" alt=""
-            /></a>
-            <a target="_blank" href="----REPLACE_ME----" class="recipe__link"
-              ><h3 class="recipe__title">----REPLACE_ME----</h3></a
-            >
-            <p class="recipe__desc">----REPLACE_ME----</p>
-          </div>
-
-          <div class="recipe__card">
-            <a
-              target="_blank"
-              href="----REPLACE_ME----"
-              class="recipe__link--img"
-              ><img class="recipe__img" src="----REPLACE_ME----" alt=""
-            /></a>
-            <a target="_blank" href="----REPLACE_ME----" class="recipe__link"
-              ><h3 class="recipe__title">----REPLACE_ME----</h3></a
-            >
-            <p class="recipe__desc">----REPLACE_ME----</p>
-          </div>
-
-          <div class="recipe__card">
-            <a
-              target="_blank"
-              href="----REPLACE_ME----"
-              class="recipe__link--img"
-              ><img class="recipe__img" src="----REPLACE_ME----" alt=""
-            /></a>
-            <a target="_blank" href="----REPLACE_ME----" class="recipe__link"
-              ><h3 class="recipe__title">----REPLACE_ME----</h3></a
-            >
-            <p class="recipe__desc">----REPLACE_ME----</p>
-          </div>
-
-          <div class="recipe__card">
-            <a
-              target="_blank"
-              href="----REPLACE_ME----"
-              class="recipe__link--img"
-              ><img class="recipe__img" src="----REPLACE_ME----" alt=""
-            /></a>
-            <a target="_blank" href="----REPLACE_ME----" class="recipe__link"
-              ><h3 class="recipe__title">----REPLACE_ME----</h3></a
-            >
-            <p class="recipe__desc">----REPLACE_ME----</p>
-          </div>
-
-          <div class="recipe__card">
-            <a
-              target="_blank"
-              href="----REPLACE_ME----"
-              class="recipe__link--img"
-              ><img class="recipe__img" src="----REPLACE_ME----" alt=""
-            /></a>
-            <a target="_blank" href="----REPLACE_ME----" class="recipe__link"
-              ><h3 class="recipe__title">----REPLACE_ME----</h3></a
-            >
-            <p class="recipe__desc">----REPLACE_ME----</p>
-          </div>
-
-          <div class="recipe__card">
-            <a
-              target="_blank"
-              href="----REPLACE_ME----"
-              class="recipe__link--img"
-              ><img class="recipe__img" src="----REPLACE_ME----" alt=""
-            /></a>
-            <a target="_blank" href="----REPLACE_ME----" class="recipe__link"
-              ><h3 class="recipe__title">----REPLACE_ME----</h3></a
-            >
-            <p class="recipe__desc">----REPLACE_ME----</p>
-          </div>
-
-          <div class="recipe__card">
-            <a
-              target="_blank"
-              href="----REPLACE_ME----"
-              class="recipe__link--img"
-              ><img class="recipe__img" src="----REPLACE_ME----" alt=""
-            /></a>
-            <a target="_blank" href="----REPLACE_ME----" class="recipe__link"
-              ><h3 class="recipe__title">----REPLACE_ME----</h3></a
-            >
-            <p class="recipe__desc">----REPLACE_ME----</p>
-          </div>
-
-          <div class="recipe__card">
-            <a
-              target="_blank"
-              href="----REPLACE_ME----"
-              class="recipe__link--img"
-              ><img class="recipe__img" src="----REPLACE_ME----" alt=""
-            /></a>
-            <a target="_blank" href="----REPLACE_ME----" class="recipe__link"
-              ><h3 class="recipe__title">----REPLACE_ME----</h3></a
-            >
-            <p class="recipe__desc">----REPLACE_ME----</p>
-          </div>
-
-          <div class="recipe__card">
-            <a
-              target="_blank"
-              href="----REPLACE_ME----"
-              class="recipe__link--img"
-              ><img class="recipe__img" src="----REPLACE_ME----" alt=""
-            /></a>
-            <a target="_blank" href="----REPLACE_ME----" class="recipe__link"
-              ><h3 class="recipe__title">----REPLACE_ME----</h3></a
-            >
-            <p class="recipe__desc">----REPLACE_ME----</p>
-          </div>
-
-          <div class="recipe__card">
-            <a
-              target="_blank"
-              href="----REPLACE_ME----"
-              class="recipe__link--img"
-              ><img class="recipe__img" src="----REPLACE_ME----" alt=""
-            /></a>
-            <a target="_blank" href="----REPLACE_ME----" class="recipe__link"
-              ><h3 class="recipe__title">----REPLACE_ME----</h3></a
-            >
-            <p class="recipe__desc">----REPLACE_ME----</p>
-          </div>
-
-          <div class="recipe__card">
-            <a
-              target="_blank"
-              href="----REPLACE_ME----"
-              class="recipe__link--img"
-              ><img class="recipe__img" src="----REPLACE_ME----" alt=""
-            /></a>
-            <a target="_blank" href="----REPLACE_ME----" class="recipe__link"
-              ><h3 class="recipe__title">----REPLACE_ME----</h3></a
-            >
-            <p class="recipe__desc">----REPLACE_ME----</p>
-          </div>
-
-          <div class="recipe__card">
-            <a
-              target="_blank"
-              href="----REPLACE_ME----"
-              class="recipe__link--img"
-              ><img class="recipe__img" src="----REPLACE_ME----" alt=""
-            /></a>
-            <a target="_blank" href="----REPLACE_ME----" class="recipe__link"
-              ><h3 class="recipe__title">----REPLACE_ME----</h3></a
-            >
-            <p class="recipe__desc">----REPLACE_ME----</p>
+            <iframe
+              width="1080"
+              height="720"
+              src="https://www.youtube.com/embed/s7iVLdGu-hI"
+              frameborder="1"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
+        <canvas id="canvas"></canvas>
       </section>
     </main>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>

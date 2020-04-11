@@ -11,10 +11,12 @@
 }
 
 html {
+  padding: 20px;
   scroll-behavior: smooth;
   font-size: 1rem;
   font-family: 'Nanum Gothic', sans-serif;
   color: black;
+  text-align: center;
 }
 
 body {
@@ -97,142 +99,307 @@ nav {
 .about-the-book {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 .para--bold {
-  padding: 10px;
-  text-justify: left;
-  line-height: 1.5;
+  padding: 20px;
+  line-height: 1.8;
   margin-top: 10px;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: medium;
   margin-bottom: 20px;
 }
 
-.image__container {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 5px;
+/* #top-separator {
+  margin-top: 60px;
 }
-
-.image__container img {
-  object-fit: cover;
-  width: 100%;
-  max-height: 100%;
-  opacity: 0;
-  animation: fadein 2s;
-  animation-fill-mode: forwards;
-}
-
-#img-1 {
-  animation-delay: 0.2s;
-}
-
-#img-2 {
-  animation-delay: 0.4s;
-}
-
-#img-3 {
-  animation-delay: 0.6s;
-}
-
-#img-4 {
-  animation-delay: 0.8s;
-}
-
-#img-5 {
-  animation-delay: 1s;
-}
-
-#img-6 {
-  animation-delay: 1.2s;
-}
-
-#img-7 {
-  animation-delay: 1.4s;
-}
-
-#img-8 {
-  animation-delay: 1.6s;
-}
-
-#img-9 {
-  animation-delay: 1.8s;
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .separator {
   align-self: center;
   justify-self: center;
-  margin-top: 60px;
+
   width: 75%;
   border-top: 2px solid black;
   grid-column-start: 1;
   grid-column-end: -1;
+} */
+
+.section__header {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: lowercase;
+  font-size: 3rem;
+  margin: 10px;
+  margin-top: 80px;
+  grid-column: 1/-1;
 }
 
 .recipe__container {
-
   margin-top: 60px;
   grid-column-start: 1;
   grid-column-end: -1;
   padding: 10px;
   display: grid;
-  gap: 10px;
+  gap: 40px;
   align-items: center;
   justify-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(auto-fill, minmax(400px, 1fr));
 }
 
 .recipe__card {
   overflow: hidden;
-  width: 100%;
+  width: 400px;
   height: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
+  vertical-align: middle;
   position: relative;
-}
-
-.recipe__link--img,
-.recipe__link--text {
 }
 
 .recipe__img {
   left: 50%;
+  transform: translate(-25%, 0);
   margin-left: -200px;
   position: absolute;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   width: auto;
-  height: 250px;
-  transition: all 0.3s ease-in;
+  height: 300px;
 }
 
 .recipe__title {
-  margin-top: 260px;
+  margin-top: 325px;
+  margin-bottom: 10px;
   text-decoration: none;
   font-size: 1rem;
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-.recipe__img:hover,
 .recipe__title:hover,
 .recipe__title:active {
-  transform: scale(1.05);
+  color: blue;
 }
 
-.recipe__desc {
+#bday-message {
+  margin-top: 20px;
+  padding: 10px 200px;
+  justify-self: center;
+  grid-column: 1/-1;
+}
+
+/* Confetti */
+
+canvas {
+  z-index: 1;
+  pointer-events: none;
+  width: 95vw;
+  height: 95vh;
+  grid-column: 1/-1;
+  margin: 0 auto;
+}
+
+#content {
+  text-align: center;
+  height: 100px;
+  font-family: verdana;
+  font-size: 45px;
+  font-weight: bold;
+  grid-column: 1/-1;
+}
+
+.wrapper {
+  display: inline-block;
+}
+
+/*laptops, desktops*/
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .grid__container {
+    grid-template-columns: 1fr;
+  }
+  .recipe__container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  iframe {
+    width: 90%;
+    height: 75vh;
+  }
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 1023px) {
+  nav {
+    padding: 0px;
+    padding-left: 0px;
+  }
+
+  .nav__main-header {
+    font-size: 1.5rem;
+    margin-right: 15px;
+  }
+
+  .nav a {
+    font-size: 0.8rem;
+  }
+
+  html {
+    padding: 0px;
+    font-size: 0.8rem;
+    align-items: center;
+  }
+  .container__img > img {
+    object-fit: cover;
+    width: 90vw;
+  }
+
+  .grid__container {
+    grid-template-columns: 1fr;
+  }
+
+  .recipe__container {
+    grid-template-columns: 1fr;
+  }
+
+  .recipe__container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .desc__container {
+    padding: 5px;
+    text-align: center;
+  }
+
+  .section__header {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: lowercase;
+    font-size: 3rem;
+    margin: 10px;
+    margin-top: 20px;
+  }
+
+  .about-the-book {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  .para--bold {
+    padding-top: 0;
+    margin-top: 10px;
+    font-size: 1.3rem;
+  }
+
+  .recipe__card {
+    width: 300px;
+  }
+
+  .recipe__title {
+    font-size: 1.4rem;
+  }
+
+  #bday {
+    margin-top: 80px;
+    font-size: 2.1rem;
+  }
+
+  #bday-message {
+    padding: 10px 20px;
+  }
+
+  .recipe__desc {
+    font-size: 1.2rem;
+  }
+
+  iframe {
+    width: 90%;
+    height: 300px;
+  }
+}
+
+/*smartphones mobiles (portrait)*/
+@media (min-width: 320px) and (max-width: 1023px) {
+  nav {
+    padding: 0px;
+    padding-left: 0px;
+  }
+
+  .nav__main-header {
+    font-size: 1.5rem;
+    margin-right: 15px;
+  }
+
+  .nav a {
+    font-size: 0.8rem;
+  }
+
+  html {
+    padding: 0px;
+    font-size: 0.8rem;
+    align-items: center;
+  }
+  .container__img > img {
+    object-fit: cover;
+    width: 90vw;
+  }
+
+  .grid__container {
+    grid-template-columns: 1fr;
+  }
+
+  .recipe__container {
+    grid-template-columns: 1fr;
+  }
+
+  .recipe__container {
+    grid-template-columns: 1fr;
+  }
+
+  .desc__container {
+    padding: 5px;
+    text-align: center;
+  }
+
+  .section__header {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: lowercase;
+    font-size: 3rem;
+    margin: 10px;
+    margin-top: 20px;
+  }
+
+  .about-the-book {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  .para--bold {
+    padding-top: 0;
+    margin-top: 10px;
+    font-size: 1.3rem;
+  }
+
+  .recipe__card {
+    width: 85vw;
+  }
+
+  .recipe__title {
+    font-size: 1.4rem;
+  }
+
+  #bday {
+    margin-top: 80px;
+    font-size: 2.1rem;
+  }
+
+  #bday-message {
+    padding: 10px 20px;
+  }
+
+  .recipe__desc {
+    font-size: 1.2rem;
+  }
+
+  iframe {
+    width: 90%;
+    height: 300px;
+  }
 }
