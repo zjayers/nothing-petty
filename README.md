@@ -1,8 +1,7 @@
 # Nothing-Petty
-[![GitHub Release](https://img.shields.io/github/release/zjayers/nothing-petty.svg?style=flat)]()
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/zjayers/nothing-petty.svg?style=flat)]()
+[![GitHub Release](https://img.shields.io/github/release/zjayers/nothing-petty.svg?style=flat)](https://github.com/zjayers/nothing-petty/releases)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/zjayers/nothing-petty.svg?style=flat)](https://github.com/zjayers/nothing-petty/pulls)
 [![Issues](https://img.shields.io/github/issues-raw/zjayers/nothing-petty.svg?maxAge=25000)](https://github.com/zjayers/nothing-petty/issues)
-[![MIT License](https://img.shields.io/apm/l/atomic-ui.svg?)](https://github.com/zjayers/nothing-petty/blob/master/LICENSEs)
 
 ## Description
 
